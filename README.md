@@ -5,4 +5,4 @@ Styles components
 
 ###
 
-- [] Routas e paginas
+- [] Rotas e paginas

@@ -44,6 +44,8 @@ export const FormTitle = styled.h2`
   text-align: center;
   color: #fff;
 
+  margin-bottom: 40px;
+
   &:after {
     content: "";
     display: block;
