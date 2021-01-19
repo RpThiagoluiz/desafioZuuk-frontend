@@ -5,7 +5,7 @@ import ListCustomers from "../pages/ListCustomers";
 
 const AppRoutes = () => (
   <Switch>
-    <Route path="/listcustomers" exact component={ListCustomers} />
+    <Route path="/" exact component={ListCustomers} />
   </Switch>
 );
 export default AppRoutes;
