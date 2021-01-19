@@ -16,7 +16,7 @@ const SingIn = () => {
   return (
     <Container>
       <Logo>
-        <img src={appIcon} alt="" />
+        <img src={appIcon} alt="Logo do app" />
         <h1>Desafio Zukk frontend</h1>
       </Logo>
       <Form onSubmit={() => singIn(user, pass)}>
