@@ -14,6 +14,11 @@ export const Header = styled.header`
 
   margin-top: 15px;
 
+  > img {
+    width: 36px;
+    height: 36px;
+  }
+
   > input {
     width: 50%;
     height: 38px;
@@ -24,13 +29,23 @@ export const Header = styled.header`
 
     border-radius: 5px;
   }
+`;
 
-  > button {
-    width: 120px;
-    background-color: #4a4e4d;
-    color: #fff;
+export const Button = styled.button`
+  width: 120px;
 
-    border-radius: 5px;
-    padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #4a4e4d;
+  color: #fff;
+
+  border-radius: 5px;
+  padding: 2px;
+  z-index: 10;
+
+  img {
+    width: 22px;
+    height: 22px;
   }
 `;
