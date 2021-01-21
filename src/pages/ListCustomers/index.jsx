@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 //Components
 import MainHeader from "../../components/MainHeader";
@@ -29,10 +30,11 @@ const ListCustomers = () => {
     api.get("http://localhost:3333/clientes").then((response) => {
       setCustomers(response.data);
     });
-  }, []);
+  }, [customers]);
 
-  const handleDeleteButton = async (index) => {
-    await api.delete(`http://localhost:3333/clientes/cadastro/${index}`);
+  const handleDeleteButton = async (id, e) => {
+    await axios.delete(`http://localhost:3333/clientes/cadastro/${id}`);
+    console.log(`clicado ${id}`);
   };
 
   return (
@@ -62,12 +64,8 @@ const ListCustomers = () => {
               <ButtonEdit>
                 <img src={editIconImg} alt="Editar" />
               </ButtonEdit>
-              <ButtonDelete>
-                <img
-                  src={deleteIconImg}
-                  alt="Deletar"
-                  onClick={handleDeleteButton(customer.id)}
-                />
+              <ButtonDelete onClick={(e) => handleDeleteButton(customer.id, e)}>
+                <img src={deleteIconImg} alt="Deletar" />
               </ButtonDelete>
             </DataCustomer>
           ))}

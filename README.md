@@ -1,7 +1,9 @@
 ## await
 
+[x] - Post in Backend
+[] - Delete Post
+[] - ChangePost
 [] - Mask Phone number
-[] - Post in Backend
 [] - JWT Valid token...
 
 ### upDate
