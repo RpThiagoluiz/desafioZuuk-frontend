@@ -46,6 +46,9 @@ export const Input = styled.input`
   padding: 10px;
 
   border-radius: 5px;
+  &:focus {
+    border: 2px solid black;
+  }
 `;
 
 export const Button = styled.button`

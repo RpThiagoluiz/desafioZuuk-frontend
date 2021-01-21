@@ -102,6 +102,7 @@ export const ButtonDelete = styled.button`
 
 export const Button = styled.button`
   width: 120px;
+  height: 100%;
 
   display: flex;
   align-items: center;

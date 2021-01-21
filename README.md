@@ -1,10 +1,10 @@
-###
+## await
 
-React router dom
-Styles components
+[] - Mask Phone number
+[] - Post in Backend
+[] - JWT Valid token...
 
-###
+### upDate
 
-- [x] Page Login wich Auth
-- [x] When Logged go to listCostumers
-- [] Create Costumers Template, screen(search, register, delete and change records) - crud
+[] - Check valid Phone
+[] - Responsive/animation

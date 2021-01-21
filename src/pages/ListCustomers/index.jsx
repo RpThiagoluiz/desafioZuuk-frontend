@@ -31,6 +31,10 @@ const ListCustomers = () => {
     });
   }, []);
 
+  const handleDeleteButton = async (index) => {
+    await api.delete(`http://localhost:3333/clientes/cadastro/${index}`);
+  };
+
   return (
     <Container>
       <MainHeader />
@@ -38,11 +42,11 @@ const ListCustomers = () => {
         <Header>
           <img src={appIconImg} alt="" />
           <input type="text" placeholder="Pesquisa" />
-          <Button>
-            <Link to="/clientes/cadastro">
+          <Link to="/clientes/cadastro">
+            <Button>
               <img src={plusIconImg} alt="" />
-            </Link>
-          </Button>
+            </Button>
+          </Link>
         </Header>
         <Body>
           {customers.map((customer) => (
@@ -59,7 +63,11 @@ const ListCustomers = () => {
                 <img src={editIconImg} alt="Editar" />
               </ButtonEdit>
               <ButtonDelete>
-                <img src={deleteIconImg} alt="Deletar" />
+                <img
+                  src={deleteIconImg}
+                  alt="Deletar"
+                  onClick={handleDeleteButton(customer.id)}
+                />
               </ButtonDelete>
             </DataCustomer>
           ))}
