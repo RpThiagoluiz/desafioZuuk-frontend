@@ -64,9 +64,10 @@ export const ButtonEdit = styled.button`
 
   border-radius: 5px;
   padding: 2px;
-  background-color: #00ff00;
+  background-color: #00b712;
+  background-image: linear-gradient(315deg, #00b712 0%, #5aff15 74%);
 
-  opacity: 0.7;
+  opacity: 0.5;
   transition: opacity ease-in 0.2s;
   > img {
     width: 24px;
@@ -83,9 +84,10 @@ export const ButtonDelete = styled.button`
 
   border-radius: 5px;
   padding: 2px;
-  background-color: #cc3333;
+  background-color: #f7b42c;
+  background-image: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);
 
-  opacity: 0.7;
+  opacity: 0.5;
   transition: opacity ease-in 0.2s;
 
   > img {

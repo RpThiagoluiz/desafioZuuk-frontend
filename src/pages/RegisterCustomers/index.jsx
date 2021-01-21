@@ -21,16 +21,67 @@ const RegisterCustomers = () => {
       <MainHeader />
       <Container>
         <ButtonBackPage />
-        <Form onSubmit={() => console.log(`HEyyy`)}>
+        <Form
+          onSubmit={console.log(
+            name,
+            cep,
+            address,
+            district,
+            city,
+            state,
+            phone,
+            email
+          )}
+        >
           <FormTitle>Cadastro</FormTitle>
-          <Input required type="text" placeholder="Nome" />
-          <Input required type="number" placeholder="CEP" />
-          <Input required type="text" placeholder="Endereço" />
-          <Input required type="text" placeholder="Bairro" />
-          <Input required type="text" placeholder="Cidade" />
-          <Input required type="text" placeholder="UF" />
-          <Input required type="phone" placeholder="Telefone" />
-          <Input required type="e-mail" placeholder="Email" />
+          <Input
+            required
+            type="text"
+            placeholder="Nome"
+            onChange={(e) => setName(e.target.value)}
+          />
+          <Input
+            required
+            type="number"
+            placeholder="CEP"
+            onChange={(e) => setCep(e.target.value)}
+          />
+          <Input
+            required
+            type="text"
+            placeholder="Endereço"
+            onChange={(e) => setAddress(e.target.value)}
+          />
+          <Input
+            required
+            type="text"
+            placeholder="Bairro"
+            onChange={(e) => setDistrict(e.target.value)}
+          />
+          <Input
+            required
+            type="text"
+            placeholder="Cidade"
+            onChange={(e) => setCity(e.target.value)}
+          />
+          <Input
+            required
+            type="text"
+            placeholder="UF"
+            onChange={(e) => setState(e.target.value)}
+          />
+          <Input
+            required
+            type="phone"
+            placeholder="Telefone"
+            onChange={(e) => setPhone(e.target.value)}
+          />
+          <Input
+            required
+            type="e-mail"
+            placeholder="Email"
+            onChange={(e) => setEmail(e.target.value)}
+          />
           <Button type="submit">Enviar Dados</Button>
         </Form>
       </Container>
