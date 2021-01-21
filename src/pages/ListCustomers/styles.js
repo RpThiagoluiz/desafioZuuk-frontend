@@ -31,6 +31,73 @@ export const Header = styled.header`
   }
 `;
 
+export const Body = styled.body`
+  margin: 50px;
+`;
+
+export const DataCustomer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: left;
+
+  color: #4a4e4d;
+  padding: 5px;
+  margin: 25px;
+
+  > h3 {
+    padding: 10px;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    margin: 2px auto;
+    border-bottom: 2px solid #fe8a71;
+  }
+`;
+
+export const ButtonEdit = styled.button`
+  width: 36px;
+  height: 36px;
+
+  border-radius: 5px;
+  padding: 2px;
+  background-color: #00ff00;
+
+  opacity: 0.7;
+  transition: opacity ease-in 0.2s;
+  > img {
+    width: 24px;
+    height: 24px;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+`;
+export const ButtonDelete = styled.button`
+  width: 36px;
+  height: 36px;
+
+  border-radius: 5px;
+  padding: 2px;
+  background-color: #cc3333;
+
+  opacity: 0.7;
+  transition: opacity ease-in 0.2s;
+
+  > img {
+    width: 24px;
+    height: 24px;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+`;
+
 export const Button = styled.button`
   width: 120px;
 
